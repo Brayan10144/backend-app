@@ -481,3 +481,15 @@ app.use(express.static(path.join(__dirname, "../HTML")));
 app.listen(3000, '0.0.0.0', () => {
   console.log("✅ Servidor corriendo en puerto 3000");
 });
+
+
+
+
+
+
+
+
+
+
+
+
