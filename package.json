@@ -5,9 +5,9 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "start": "electron .",
-    "backend": "node server.js"
-  },
+  "start": "node server.js"
+  }
+
   "keywords": [],
   "author": "",
   "license": "ISC",
