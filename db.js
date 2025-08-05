@@ -1,19 +1,20 @@
+// db.js
 const mysql = require('mysql2');
-require('dotenv').config();
 
 const connection = mysql.createConnection({
-  host: 'localhost',
+  host: 'gondola.proxy.rlwy.net',
+  port: 36026,
   user: 'root',
-  password: '', 
-  database: 'bdinstitucion'
+  password: 'tFkBNvQuXKSmFAlkKzwdlBDDDGgwPUgh',
+  database: 'railway',
 });
 
-connection.connect((err) => {
+connection.connect(err => {
   if (err) {
-    console.error('❌ Error al conectar a la base de datos:', err);
+    console.error('Error de conexión:', err);
     return;
   }
-  console.log('✅ Conectado a MySQL correctamente');
+  console.log('Conectado a Railway MySQL');
 });
 
 module.exports = connection;
